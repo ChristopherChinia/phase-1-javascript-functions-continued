@@ -10,8 +10,10 @@ function mondayWork(activity = `go to the office`){
     }
     console.log(mondayWork("work from home"))
 
-function wrapAdjective(){
-    let 
+const wrapAdjective = function (sample = "*"){
+    return function(newFun = "special"){
+        return `You are ${sample}${newFun}${sample}!`
+    }
     }
        
 
